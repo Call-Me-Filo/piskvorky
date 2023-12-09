@@ -1,0 +1,339 @@
+* {
+    box-sizing: border-box;
+}
+
+.background {
+width: 720px;
+height: 720px;
+background-color:#6b6d75;
+margin: 0 auto;
+position: relative;
+}
+
+.container {
+display: flex;
+align-items: center;
+height: 100vh;
+}
+
+.start-button {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 160px;
+height: 80px;
+background-color: darkred;
+text-align: center;
+line-height: 80px;
+font-size: 50px;
+color: ghostwhite;
+font-family: Arial, Helvetica, sans-serif;
+cursor: pointer;
+}
+
+.win-button {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 320px;
+height: 160px;
+background-color: green;
+text-align: center;
+line-height: 160px;
+font-size: 50px;
+color: ghostwhite;
+font-family: Arial, Helvetica, sans-serif;
+cursor: pointer;
+}
+
+.row {
+width: 100%;
+display: flex;
+}
+
+.field {
+width: 40px;
+height: 40px;
+background: ghostwhite;
+border: 1px solid black;
+}
+
+.field svg {
+display: block;
+width: 100%;
+height: 100%;
+}
+
+.circle svg {
+padding: 5px; 
+fill: tomato;
+}
+.hidden {
+display: none;
+}
+
+.navbar {
+height: 480px;
+width: 240px;
+position: absolute;
+left: 175px;
+top: 50%;
+transform: translateY(-50%) ;
+background-color: darkred;
+border: 1px solid black;
+}
+
+.dropdown {
+display: none;
+}
+
+.btn {
+    user-select: none;
+    cursor: pointer;
+}
+
+.difficulty {
+height: 120px;
+width: 180px;
+background-color: darkred;
+position: absolute;
+left: 30px;
+top: 30px;
+text-align: center;
+line-height: 120px;
+font-size: 40px;
+color: ghostwhite;
+border: 1px solid black;
+}
+
+.easy {
+height: 50px;
+width: 150px;
+background-color: darkred;
+position: absolute;
+left: 208px;
+top: 5px;
+text-align: center;
+line-height: 50px;
+font-size: 25px;
+color: ghostwhite;
+border: 1px solid black;
+}
+
+.medium {
+height: 50px;
+width: 150px;
+background-color: darkred;
+position: absolute;
+left: 208px;
+top: 55px;
+text-align: center;
+line-height: 50px;
+font-size: 25px;
+color: ghostwhite;
+border: 1px solid black;
+}
+
+.mode {
+height: 120px;
+width: 180px;
+background-color: darkred;
+position: absolute;
+left: 30px;
+top: 180px;
+text-align: center;
+line-height: 120px;
+font-size: 40px;
+color: ghostwhite;
+border: 1px solid black;
+}
+
+.singleplayer {
+height: 50px;
+width: 150px;
+background-color: darkred;
+position: absolute;
+left: 208px;
+top: 5px;
+text-align: center;
+line-height: 50px;
+font-size: 25px;
+color: ghostwhite;
+border: 1px solid black;
+}
+
+.multiplayer {
+height: 50px;
+width: 150px;
+background-color: darkred;
+position: absolute;
+left: 208px;
+top: 55px;
+text-align: center;
+line-height: 50px;
+font-size: 25px;
+color: ghostwhite;
+border: 1px solid black;
+}
+
+
+.colour {
+height: 120px;
+width: 180px;
+background-color: darkred;
+position: absolute;
+left: 30px;
+top: 330px;
+text-align: center;
+line-height: 120px;
+font-size: 40px;
+color: ghostwhite;
+border: 1px solid black;
+}
+
+
+.colour1 {
+    height: 50px;
+    width: 250px;
+    background-color: darkred;
+    position: absolute;
+    left: 208px;
+    top: 5px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+    color: ghostwhite;
+    border: 1px solid black;
+    z-index: 999;
+}
+
+.colour2 {
+    height: 50px;
+    width: 250px;
+    background-color: darkred;
+    position: absolute;
+    left: 208px;
+    top: 55px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+    color: ghostwhite;
+    border: 1px solid black;
+    z-index: 999;
+}
+
+.colour3 {
+    height: 50px;
+    width: 250px;
+    background-color: darkred;
+    position: absolute;
+    left: 208px;
+    top: 105px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+    color: ghostwhite;
+    border: 1px solid black;
+    z-index: 999;
+}
+
+.title {
+height: 80px;
+width: 560px;
+background-color: darkred;
+position: absolute;
+top: 10px;
+left: 50%;
+transform:translateX(-50%);
+text-align: center;
+line-height: 80px;
+font-size: 60px;
+color: ghostwhite;
+border: 1px solid black;
+}
+
+.score {
+height: 300px;
+width: 480px;
+background-color: darkred;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+right: 70px;
+text-align: center;
+line-height: 240px;
+font-size: 60px;
+color: ghostwhite;
+border: 1px solid black;
+}
+
+.player1 {
+height: 80px;
+width: 240px;
+position: absolute;
+top: 0px;
+left: 0px;
+text-align: center;
+line-height: 80px;
+font-size: 40px;
+color: ghostwhite;
+border: 1px solid black;
+}
+
+.player2 {
+height: 80px;
+width: 240px;
+position: absolute;
+top: 0px;
+left: 240px;
+text-align: center;
+line-height: 80px;
+font-size: 40px;
+color: ghostwhite;
+border: 1px solid black;
+}
+
+.active-player {
+    background: green;
+}
+
+.score1 {
+height: 120px;
+width: 240px;
+position: absolute;
+top: 80px;
+left: 0px;
+text-align: center;
+line-height: 120px;
+font-size: 40px;
+color: ghostwhite;
+border: 1px solid black;
+}
+
+.score2 {
+height: 120px;
+width: 240px;
+position: absolute;
+top: 80px;
+left: 240px;
+text-align: center;
+line-height: 120px;
+font-size: 40px;
+color: ghostwhite;
+border: 1px solid black;
+}
+
+.reset {
+height: 100px;
+width: 480px;
+position: absolute;
+top: 200px;
+left: 0px;
+text-align: center;
+line-height: 100px;
+font-size: 40px;
+color: ghostwhite;
+border: 1px solid black;
+}

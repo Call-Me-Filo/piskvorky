@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piškvorky</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title" id="title">Piškvorky</div>
+
+    <nav class="navbar">
+        <div class="difficulty btn" id="difficulty">Obtížnost
+            <div class="dropdown" id="difficultyDropdown">
+            <div class="dropdown-item btn easy" id="easy">Jednoduchá</div>
+            <div class="dropdown-item btn medium" id="medium">Střední</div>
+        </div>
+        </div>
+
+        <div class="mode btn" id="mode">Typ hry
+            <div class="dropdown" id="modeDropdown">
+            <div class="dropdown-item btn singleplayer" id="singleplayer">Jeden hráč</div>
+            <div class="dropdown-item btn multiplayer" id="multiplayer">Dva hráči</div>
+        </div>
+        </div>
+        <div class="colour" id="colour">Barva
+            <div class="dropdown" id="colourDropdown">
+            <div class="dropdown-item btn colour1" id="colour1">Černá-Červená</div>
+            <div class="dropdown-item btn colour2" id="colour2">Fialová-Růžová</div>
+            <div class="dropdown-item btn colour3" id="colour3">Zelená-Modrá</div>
+        </div>
+        </div>
+    </nav>
+
+    <div class="score" id="score">
+     <div class="player1 active-player" id="player1">Hráč 1 - X</div>
+     <div class="player2" id="player2">Hráč 2 - O</div>
+     <div class="score1" id="score1">0</div>
+     <div class="score2" id="score2">0</div>
+     <div class="reset btn" id="reset">Reset</div>
+    </div>
+
+    <div class="container">
+        <div class="background" id="playground">
+            <div class="start-button" id="startButton">Hrát</div>
+        </div>
+    </div>
+
+    <div class="hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="circle"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" id="cross"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+    </div>
+    
+    <script src="bundle.js"></script>
+</body>
+</html>
